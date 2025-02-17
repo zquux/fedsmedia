@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .testimonial {
+      flex-direction: column; /* Stack text and video on smaller screens */
+      align-items: flex-start;
+    }
+    
+    .testimonial-video iframe {
+      max-width: 100%;
+    }
+  }
