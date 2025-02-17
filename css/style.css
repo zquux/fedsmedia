@@ -408,7 +408,7 @@ body {
 /* SERVICES ==========> */
 /* Services hero */
 .services-hero {
-  background-image: url(images/services_main.jpg);
+  background-image: url(../images/services_main.jpg);
   background-position: 50% 32%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -579,7 +579,7 @@ body {
 /* PRICING ==================> */
 /* Pricing hero */
 .pricing__hero {
-  background-image: url(images/pricing_main.jpg);
+  background-image: url(../images/pricing_main.jpg);
   background-position: 50% 80%;
   background-size: cover;
   background-repeat: no-repeat;
