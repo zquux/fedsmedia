@@ -1,54 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; object-src 'none';"> -->
     <title>Feds Media | Contact</title>
-    <link rel="stylesheet" href="css/style.css"/>
-</head>
-<body>
-
-<header class="header">
-    <div class="container">
-    <div class="header__inner">
-        <div class="logo"><a href="./index.html">feds media</a></div>
-        <nav class="nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="pricing.html">Pricing</a></li>    
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-        </nav>
-    </div>
-    </div>
-</header>   
-
-<section class="contact__hero">
-    <h2>contact</h2>
-</section>
-
-<section class="contact__main">
-    <div class="container">
-        <div class="contant__main-wrapper">
-            <div class="contact__main-work">
-                <h2>Let's Work</h2>
-                <p>
-                    Fill out the form and we'll get back to you in 24 hours with a 
-                    quote and a request to set up a call for more details.
-                </p>
-            </div>
-            <div class="contact__main-general">
-                <h2>General inquiries.</h2>
-                <p>
-                    Have a different question? Write us an email!
-                </p>
-                <a href="mailto:hello@fedsmedia.com">hello@fedsmedia.com</a>
-            </div>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo"><a href="./index.html">feds media</a></div>
+          <nav class="nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+          </nav>
         </div>
-    </div>
-</section>
+      </div>
+    </header>
 
-</body>
+    <section class="contact__hero">
+      <h2>contact</h2>
+    </section>
+
+    <section class="contact__main">
+      <div class="container">
+        <div class="contant__main-wrapper">
+          <div class="contact__main-work">
+            <h2>Let's Work</h2>
+            <p>
+              Fill out the form and we'll get back to you in 24 hours with a
+              quote and a request to set up a call for more details.
+            </p>
+          </div>
+          <div class="contact__main-general">
+            <h2>General inquiries.</h2>
+            <p>Have a different question? Write us an email!</p>
+            <a href="mailto:hello@fedsmedia.com">hello@fedsmedia.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <form action="#" method="post" class="form-section">
+          <label for="name">Name*</label>
+          <input type="text" id="name" name="name" maxlength="50" required>
+    
+          <label for="email">Email*</label>
+          <input type="email" id="email" name="email" maxlength="50" required>
+    
+          <label for="website">Website</label>
+          <input type="url" id="website" name="website" maxlength="100">
+    
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone">
+    
+          <label for="hear-about">How did you hear about us?*</label>
+          <select id="hear-about" name="hear-about" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="LinkedIn">LinkedIn</option>
+            <option value="Google Search">Google Search</option>
+            <option value="Friend">Friend</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Other">Other</option>
+          </select>
+    
+          <label for="service">What kind of service are you requiring?*</label>
+          <select id="service" name="service">
+            <option value="" disabled selected>Select an option</option>
+            <option value="Video">Video</option>
+            <option value="Storytelling">Storytelling</option>
+            <option value="Short-form Content">Short-form Content</option>
+            <option value="Videography">Videography</option>
+            <option value="Photography">Photography</option>
+            <option value="Other">Other</option>
+          </select>
+    
+          <label for="message">Tell us about your project*</label>
+          <textarea id="message" name="message" rows="5" maxlength="1000" required></textarea>
+          <div class="form-underground">
+            <p>* mandatory field</p>
+            <p id="counter">0 / 1000</p>
+          </div>
+         
+    
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+
+    <footer class="footer-special">
+      <div class="container footer__inner-special">
+        <div class="say-hello">
+          <h3>Say Hello!</h2>
+          <p>Feds Media</p>
+          <a href="mailto:hello@fedsmedia.com">hello@fedsmedia.com</a>
+          <a href="tell:+17683245102">Phone: (176) 83 24 5102</a>
+        </div>
+        <div class="explore">
+          <h3>Explore</h2>
+          <a href="index.html">Home</a>
+          <a href="#">About</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="media">
+          <h3>Feds Media</h2>
+          <p>We craft strategic video content for businesses to help them achieve the desired. </p>
+        </div>
+      </div>
+    </footer>
+    <script src="/main.js"></script>
+  </body>
 </html>
